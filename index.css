@@ -6,8 +6,8 @@
 
 :root {
     --primary-color: #6366f1;
-    --primary-dark: #4f46e5;
-    --secondary-color: #ec4899;
+    --primary-dark: #121b75;
+    --secondary-color: #0f172a;
     --dark-bg: #0f172a;
     --light-bg: #f8fafc;
     --text-dark: #1e293b;
@@ -55,16 +55,22 @@ body {
     gap: 2rem;
 }
 
+.logo img {
+    height: 55px;
+    width: auto;
+    display: block;
+}
+
 .logo {
     display: flex;
-    flex-direction: column;
-    line-height: 1.2;
+    align-items: center;
 }
+
 
 .logo-text {
     font-size: 1.8rem;
     font-weight: 700;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: #121b75;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -74,9 +80,28 @@ body {
     font-size: 0.75rem;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: var(--text-light);
+    color: #121b75;
     margin-left: 2px;
 }
+
+.nav-link {
+    color: #ffffff;
+}
+
+.nav-link:hover {
+    color: #4E5AF2; /* акцент */
+}
+
+.phone-number a,
+.phone-number,
+.phone-icon {
+    color: #ffffff;
+}
+
+.mobile-menu-btn span {
+    background: #ffffff;
+}
+
 
 .nav-menu {
     display: flex;
@@ -99,12 +124,12 @@ body {
     left: 0;
     width: 0;
     height: 2px;
-    background: var(--primary-color);
+    background: #121b75;
     transition: width 0.3s;
 }
 
 .nav-link:hover {
-    color: var(--primary-color);
+    color: #121b75;
 }
 
 .nav-link:hover::after {
@@ -115,17 +140,17 @@ body {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    color: var(--primary-color);
+    color: #121b75;
     font-weight: 600;
 }
 
 .phone-number a {
-    color: var(--primary-color);
+    color: #121b75;
     text-decoration: none;
 }
 
 .phone-icon {
-    color: var(--primary-color);
+    color: #121b75;
 }
 
 .mobile-menu-btn {
@@ -140,7 +165,7 @@ body {
 .mobile-menu-btn span {
     width: 25px;
     height: 3px;
-    background: var(--text-dark);
+    background: #121b75;
     border-radius: 3px;
     transition: all 0.3s;
 }
@@ -151,7 +176,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #121b75 0%, #121b47 100%);
     padding-top: 80px;
     overflow: hidden;
 }
@@ -183,7 +208,7 @@ body {
 }
 
 .highlight {
-    background: linear-gradient(to right, #fbbf24, #f59e0b);
+    background: linear-gradient(to right, #000002, #192138);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -215,7 +240,7 @@ body {
 
 .btn-primary {
     background: var(--white);
-    color: var(--primary-color);
+    color: #121b75;
 }
 
 .btn-primary:hover {
@@ -231,7 +256,7 @@ body {
 
 .btn-secondary:hover {
     background: var(--white);
-    color: var(--primary-color);
+    color: #121b75;
     transform: translateY(-3px);
 }
 
@@ -304,7 +329,7 @@ section {
 .title-underline {
     width: 80px;
     height: 4px;
-    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(to right, #121b75, var(--dark-bg));
     margin: 0 auto 1.5rem;
     border-radius: 2px;
 }
@@ -332,7 +357,7 @@ section {
 }
 
 .image-placeholder {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(135deg, #121b75, var(--dark-bg));
     border-radius: 20px;
     aspect-ratio: 1;
     display: flex;
@@ -344,7 +369,7 @@ section {
 
 .about-subtitle {
     font-size: 1.5rem;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     margin-bottom: 1.5rem;
 }
 
@@ -370,7 +395,7 @@ section {
     display: block;
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     margin-bottom: 0.5rem;
 }
 
@@ -600,7 +625,7 @@ section {
 .footer-title {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: #ffffff;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
